@@ -1,5 +1,6 @@
 ## Put comments here that give an overall description of what your
 ## functions do
+
 ## There will be 2 functions that will help reduce the time taken to  
 ## compute the inverse of matrices. The functions help to cache the 
 ## inverse of a matrix so that if the inverse of the same matrix 
@@ -22,10 +23,10 @@ makeCacheMatrix <- function(x = matrix()) {
        get = get,
        setInverse = setInverse,
        getInverse = getInverse)
+
 }
-
-
 ## Write a short comment describing this function
+
 ## the cacheSolve function checks whether the inverse of
 ## the matrix created by makeCacheMatrix has been computed. If the 
 ## inverse has already been cached, then it will retrieve the 
@@ -42,4 +43,3 @@ cacheSolve <- function(x, ...) {
   x$setInverse(inv)
   inv
 }
-
